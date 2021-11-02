@@ -1,0 +1,285 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background: url(../Consulta/recurso/f1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.principal {
+    height: 100vh;
+    width: 100%;
+
+    /* background: url(./recurso/rm222batch5-mind-24.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+form {
+    /* margin: 70px; */
+    display: flex;
+    flex-flow: column;
+    background: rgba(256, 256, 256, 0.6);
+    width: 34%;
+    /* height: 60%; */
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 35px;
+    box-shadow: rgba(0, 0, 0, 0.8) 0px 0px 50px;
+
+}
+
+.piedepag{
+    width: 53%;
+    height: 80%;
+    padding: 10px;
+    background: rgba(256, 256, 256, 0.6);
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 35px;
+    box-shadow: rgba(0, 0, 0, 0.774) 0px 0px 50px;
+    text-align: center;
+}
+
+
+input {
+    /* background: transparent; */
+    background: rgba(255, 255, 255, 0.6);
+    border: none;
+    resize: none;
+    outline: none;
+    padding: 13px 0px;
+    width: 80%;
+    margin: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 25px;
+    text-align: center;
+    transition: all 500ms;
+}
+
+.conjunto3{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+input:focus {
+    /* border-color: #6bb1cc; */
+    transform: scale(1.07);
+    box-shadow: rgba(0, 0, 0, 0.8) 0px 0px 9px;
+
+}
+
+.subtitle{
+    margin-top: 15px;
+    font-weight: 500;
+}
+
+#textoo1, #textoo2, #textoo3, #textoo4{
+    font-size: 14px;
+    
+}
+
+#textoo5{
+    font-size: 21px;
+    font-weight: 500;
+    width: 40%;
+
+}
+
+/* ----------------boton-------------------------- */
+.btn-grad {
+    background-image: linear-gradient(to right, #2c3e50 0%, #3498db 51%, #2c3e50 100%)
+    
+}
+
+.btn-grad {
+    margin: 10px;
+    padding: 15px 20px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px rgb(61, 202, 221);
+    border-radius: 20px;
+    display: none;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-grad:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+    transform: scale(1.07);
+}
+
+
+/* ------------titulo form------------------ */
+.instruccion{
+    font-size: 18px;
+    text-transform: uppercase;
+    margin: 10px 0px;
+    text-align: center;
+    color: #333333;
+}
+
+/* --------------mitad dos imagenes----------- */
+
+.images{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.images iframe{
+
+    width: 420px;
+    height: 590px;
+}
+
+.images .logo{
+
+    width: 300px;
+}
+
+.logo{
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width: 1366px){
+    .images .logo{
+
+        width: 150px;
+    }
+
+    .images iframe{
+
+        width: 400px;
+        height: 480px;
+    }
+
+    .instruccion{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 1080px){
+    .images .logo{
+
+        width: 100px
+    }
+    .images iframe{
+
+        display: none;
+    }
+
+    .instruccion{
+        font-size: 13px;
+    }
+
+    input{
+        width: 80%;
+    }
+
+    .btn-grad{
+        display: block;
+        font-size: 15px;
+        padding: 18px 17px;
+        outline: none;
+    }
+}
+
+@media screen and (max-width: 1080px){
+
+    body {
+        height: auto;
+        padding: 30px;
+
+    }
+
+    .principal{
+        flex-direction: column-reverse;
+    }
+
+    form{
+        width: 60%;
+        margin-top: 50px;
+    }
+
+    .piedepag{
+
+        width: 85%;
+        padding: 10px;
+        background: rgba(256, 256, 256, 0.6);
+        display: flex;
+        flex-direction: column;
+        margin-top: 200px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 35px;
+        box-shadow: rgba(0, 0, 0, 0.774) 0px 0px 50px;
+        text-align: center;
+    }
+
+
+}
+
+@media screen and (max-width: 500px) {
+    .images .logo{
+
+        width: 80px
+    }
+    .images .iframe{
+
+        width: 280px;
+    }
+
+    .instruccion{
+        font-weight: 500;
+        font-size: 11px;
+    }
+
+    input{
+        width: 90%;
+
+    }
+
+    #textoo1, #textoo2, #textoo3, #textoo4{
+        font-size: 12px;
+    }
+
+    #textoo5{
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    form{
+        width: 80%;
+    }
+
+    .btn-grad{
+        font-size: 12px;
+        padding: 13px 20px;
+    }
+}
